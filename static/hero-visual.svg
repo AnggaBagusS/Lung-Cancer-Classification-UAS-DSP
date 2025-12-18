@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1">
+      <stop offset="0%" stop-color="#6EE7B7"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" rx="18" fill="url(#g1)" opacity="0.10"/>
+  <g transform="translate(80,60)">
+    <circle cx="220" cy="160" r="100" fill="#ffffff22" />
+    <path d="M140 240c48-84 240-84 288 0" stroke="#fff" stroke-opacity="0.10" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <rect x="360" y="20" width="220" height="140" rx="14" fill="#ffffff11"/>
+    <text x="40" y="380" fill="#ffffffdd" font-family="Poppins, Arial" font-size="34">Hero illustration</text>
+    <text x="40" y="420" fill="#ffffffaa" font-family="Inter, Arial" font-size="14">Placeholder SVG for the hero section</text>
+  </g>
+</svg>

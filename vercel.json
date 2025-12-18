@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [{ "src": "app.py", "use": "@vercel/python" }],
+  "env": {
+    "MLFLOW_URI": "",
+    "MLFLOW_TRACKING_USERNAME": "",
+    "MLFLOW_TRACKING_PASSWORD": "",
+    "REGISTERED_MODEL_NAME": "logistic_regression_cancer",
+    "MODEL_VERSION": "1",
+    "MODEL_PATH": "model/logistic_regression_cancer.pkl"
+  },
+  "routes": [
+    { "src": "/static/(.*)", "dest": "/static/$1" },
+    { "src": "/(.*)", "dest": "app.py" }
+  ]
+}

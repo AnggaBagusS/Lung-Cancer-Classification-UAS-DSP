@@ -1,0 +1,161 @@
+{% extends 'base.html' %}
+{% block title %}Home – UAS DSP{% endblock %}
+
+{% block content %}
+
+<style>
+  /* =====================
+     HERO LANDING (CENTERED)
+  ===================== */
+  .hero-landing {
+    min-height: 100vh;
+    padding: 140px 80px 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top left, #1a1f36, transparent);
+    text-align: center;
+  }
+
+  .left {
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-subtitle {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .hero-landing h1 {
+    font-size: 64px;
+    line-height: 1.1;
+    font-weight: 800;
+    margin-bottom: 16px;
+  }
+
+  .hero-landing h1 span {
+    background: linear-gradient(90deg, #d946ef, #fb7185);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .hero-desc {
+    max-width: 600px;
+    color: #ccc;
+    margin-bottom: 24px;
+    font-size: 16px;
+  }
+
+  /* =====================
+     BUTTONS
+  ===================== */
+  .cta {
+    margin-bottom: 36px;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 6px;
+  }
+
+  .btn.primary {
+    background: #ffffff;
+    color: #000000;
+  }
+
+  .btn.ghost {
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    color: #ffffff;
+  }
+
+  /* =====================
+     STATS
+  ===================== */
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    width: 100%;
+    max-width: 640px;
+  }
+
+  .card {
+    background: rgba(255, 255, 255, 0.04);
+    padding: 20px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .stat h2 {
+    font-size: 36px;
+    font-weight: 800;
+  }
+
+  .muted {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+  }
+
+  /* =====================
+     RESPONSIVE
+  ===================== */
+  @media (max-width: 768px) {
+    .hero-landing {
+      padding: 120px 32px 60px;
+    }
+
+    .hero-landing h1 {
+      font-size: 40px;
+    }
+
+    .stats-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+
+<section class="hero-landing">
+  <div class="left">
+    <p class="hero-subtitle">Our strategies that drive</p>
+    <h1>
+      Impact and <br />
+      <span>Growth</span>
+    </h1>
+
+    <p class="hero-desc">
+      Sistem prediksi risiko kanker paru-paru berbasis Machine Learning menggunakan Logistic Regression untuk membantu pengambilan keputusan medis secara lebih cepat dan akurat.
+    </p>
+
+    <div class="cta">
+      <a href="/dashboard" class="btn ghost">Dashboard</a>
+      <a href="/predict" class="btn primary">Explore Prediction</a>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat card">
+        <h2>100%</h2>
+        <p class="muted">Model loaded successfully</p>
+      </div>
+      <div class="stat card">
+        <h2>1k</h2>
+        <p class="muted">Data records processed</p>
+      </div>
+      <div class="stat card">
+        <h2>11</h2>
+        <p class="muted">Features analyzed</p>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

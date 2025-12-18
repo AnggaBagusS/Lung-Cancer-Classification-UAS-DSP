@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{% block title %}UAS DSP – Cancer Risk{% endblock %}</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+      /* =====================
+         RESET & GLOBAL
+      ===================== */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: 'Inter', sans-serif;
+        background: #0b0d12;
+        color: #ffffff;
+      }
+
+      /* =====================
+         NAVBAR
+      ===================== */
+      .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(11, 13, 18, 0.9);
+        backdrop-filter: blur(10px);
+        z-index: 100;
+      }
+
+      .nav-container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 20px 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 20px;
+        font-weight: 800;
+      }
+
+      .nav-links a {
+        margin-left: 24px;
+        text-decoration: none;
+        color: #ddd;
+        font-weight: 500;
+      }
+
+      .nav-links a:hover {
+        color: #fff;
+      }
+
+      .btn-outline {
+        padding: 8px 16px;
+        border: 1px solid #fff;
+        border-radius: 20px;
+      }
+
+      /* =====================
+         CONTENT OFFSET
+      ===================== */
+      main {
+        padding-top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="nav-container">
+        <div class="logo">Lung Cancer Risk</div>
+        <nav class="nav-links">
+          <a href="/">Home</a>
+          <a href="/dashboard">Dashboard</a>
+          <a href="/predict">Predict</a>
+          <a href="/model" class="btn-outline">Load Model</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+  </body>
+</html>

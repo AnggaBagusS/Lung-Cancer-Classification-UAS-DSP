@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="480" viewBox="0 0 700 480">
+  <defs>
+    <linearGradient id="g2" x1="0" x2="1">
+      <stop offset="0%" stop-color="#FFD27A"/>
+      <stop offset="100%" stop-color="#FF6B6B"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" rx="14" fill="url(#g2)" opacity="0.10"/>
+  <g transform="translate(40,40)">
+    <rect x="12" y="12" width="220" height="140" rx="12" fill="#ffffff22"/>
+    <rect x="260" y="12" width="140" height="140" rx="12" fill="#ffffff11"/>
+    <circle cx="500" cy="80" r="56" fill="#ffffff33"/>
+    <text x="20" y="220" fill="#ffffffdd" font-family="Poppins, Arial" font-size="20">Predict visual</text>
+    <text x="20" y="250" fill="#ffffffaa" font-family="Inter, Arial" font-size="12">Placeholder for prediction graphic</text>
+  </g>
+</svg>

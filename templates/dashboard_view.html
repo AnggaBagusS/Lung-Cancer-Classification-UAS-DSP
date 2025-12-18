@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block title %}Dashboard – Cancer Risk{% endblock %}
+
+{% block content %}
+
+<style>
+  /* =====================
+     DASHBOARD PAGE
+  ===================== */
+  .dashboard-page {
+    padding: 140px 80px 80px;
+    min-height: 100vh;
+    background: radial-gradient(circle at top left, #1a1f36, transparent);
+  }
+
+  .dashboard-page h2 {
+    font-size: 36px;
+    font-weight: 800;
+    margin-bottom: 24px;
+  }
+
+  .dashboard-desc {
+    color: #ccc;
+    max-width: 640px;
+    margin-bottom: 32px;
+  }
+
+  /* =====================
+     DASHBOARD CONTAINER
+  ===================== */
+  .dashboard-container {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 16px;
+    backdrop-filter: blur(12px);
+  }
+
+  .dashboard-container iframe {
+    width: 100%;
+    height: 520px;
+    border-radius: 14px;
+    border: none;
+    background: #ffffff;
+  }
+
+  /* =====================
+     RESPONSIVE
+  ===================== */
+  @media (max-width: 1024px) {
+    .dashboard-page {
+      padding: 120px 40px 60px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .dashboard-page h2 {
+      font-size: 28px;
+    }
+
+    .dashboard-container iframe {
+      height: 420px;
+    }
+  }
+</style>
+
+<section class="dashboard-page">
+  <h2>Dashboard Analitik</h2>
+  <p class="dashboard-desc">
+    Visualisasi data hasil analisis dan performa model prediksi risiko kanker
+    paru-paru berdasarkan data yang telah diproses.
+  </p>
+
+  <div class="dashboard-container">
+    <iframe
+      src="https://lookerstudio.google.com/embed/reporting/ecf0e212-64d5-4a3d-a4cc-a4b237bcc5d4/page/1RxiF"
+      allowfullscreen
+      sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+    </iframe>
+  </div>
+</section>
+
+{% endblock %}
