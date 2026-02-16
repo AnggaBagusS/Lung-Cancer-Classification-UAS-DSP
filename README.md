@@ -11,6 +11,7 @@
 Menampilkan ringkasan sistem, tujuan proyek, dan statistik model (seperti jumlah data yang diproses dan fitur yang dianalisis).
 
 <img width="840" height="497" alt="Screenshot 2026-02-16 143728" src="https://github.com/user-attachments/assets/d71f76a1-7af7-44c2-a187-0914df10f326" />
+
 ### 2. 📊 Dashboard Analitik
 Visualisasi data interaktif untuk memahami distribusi data latih:
 * Total Record Data (1,000 data).
@@ -19,6 +20,7 @@ Visualisasi data interaktif untuk memahami distribusi data latih:
 * **Bar Chart:** Hubungan antara kelompok umur dengan tingkat risiko.
 
 <img width="700" height="495" alt="Screenshot 2026-02-16 143801" src="https://github.com/user-attachments/assets/ecc6ad71-6b14-4bac-a493-ef9b540f15f0" />
+
 ### 3. 🔍 Sistem Prediksi (Prediction)
 Formulir interaktif dimana pengguna dapat memasukkan parameter kesehatan untuk mendapatkan prediksi risiko kanker paru-paru secara langsung.
 * **Input Features (11 Parameter):**
